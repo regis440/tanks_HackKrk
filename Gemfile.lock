@@ -1,0 +1,22 @@
+GIT
+  remote: git://github.com/regis440/gosu-tmx.git
+  revision: 961097aa6c02156374c025a65791d9e6f62f3484
+  specs:
+    tmx_by_regis440 (0.0.1)
+
+GEM
+  specs:
+    gosu (0.7.45)
+    mime-types (1.19)
+    nokogiri (1.5.6)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gosu
+  nokogiri
+  rest-client
+  tmx_by_regis440 (= 0.0.1)!

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tankv2" tilewidth="32" tileheight="32">
+  <image source="tankv2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="roadv2" tilewidth="32" tileheight="32">
+  <image source="roadv2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="playerv2" tilewidth="32" tileheight="32">
+  <image source="playerv2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="4" name="wallv2" tilewidth="32" tileheight="32">
+  <image source="wallv2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="5" name="szczalv2" tilewidth="32" tileheight="32">
+  <image source="szczalv2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="6" name="bulletpv2" tilewidth="32" tileheight="32">
+  <image source="bulletpv2.png" width="32" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NhYGBgoQNmoiEeSXZQGraDxQ5KwxZdDyE34xPDpW8g7CCkj5y8NpB2kGMXsWZQ0w5qqifXXfS2A194k5KWSTWHFDlCaYISOyjRT43wpKcd5PidWnaQioebHbTGAF2N6xrECQAA
+  </data>
+ </layer>
+ <objectgroup name="tanks" width="25" height="25">
+  <object name="tank1" gid="1" x="32" y="768"/>
+  <object name="tank2" gid="1" x="736" y="64"/>
+  <object gid="1" x="672" y="672"/>
+  <object gid="1" x="384" y="544"/>
+ </objectgroup>
+ <objectgroup name="players" width="25" height="25">
+  <object name="player" gid="3" x="448" y="160"/>
+ </objectgroup>
+ <objectgroup name="bullets" width="25" height="25"/>
+</map>

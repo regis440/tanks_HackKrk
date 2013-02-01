@@ -1,0 +1,6 @@
+window:
+ caption: 		'Tanks'
+ width: 		800
+ height: 		800
+ fullscreen: 	false
+ frequency:		15
