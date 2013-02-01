@@ -27,9 +27,11 @@ Support:
 
 MacOSX + http://files.tattiebogle.net/360/360ControllerInstall.0.11.dmg
 
+Keymap:
+
 D-Pad - move direction
 
-Right Stick - - shoot direction
+Right Stick - shoot direction
 
 A - shoot
 
