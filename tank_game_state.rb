@@ -283,6 +283,33 @@ class TankMap < GameState
 		end
 
 			
+		if  button_down? Gosu::KbW 
+			dir = 0
+		end
+		if button_down? Gosu::KbS 
+			dir = 1
+		end
+		if button_down? Gosu::KbA 
+			dir = 2
+		end
+		if button_down? Gosu::KbD 
+			dir = 3
+		end
+
+		
+		if button_down? Gosu::KbI 
+			@shoot_dir = ShootUp
+		end
+		if button_down? Gosu::KbK 
+			@shoot_dir = ShootDown
+		end
+		if button_down? Gosu::KbJ  
+			@shoot_dir = ShootLeft
+		end
+		if button_down? Gosu::KbL  
+			@shoot_dir = ShootRight
+		end
+
 		layer = @map.layers["Tile Layer 1"]
 		move_player_on_pos @map, layer, dir
 		updateBullets layer
@@ -315,5 +342,6 @@ class TankMap < GameState
 
 	def button_up(id)
 		map.object_groups["players"].each do |obj| shoot obj[:x], obj[:y] end if Xbox360::A == id
+		map.object_groups["players"].each do |obj| shoot obj[:x], obj[:y] end if  Gosu::KbSpace == id
 	end
 end

@@ -80,6 +80,9 @@ class ScoresMenu < GameState
 		if Xbox360::B == id
 			back
 		end
+		if Gosu::KbEscape == id
+			back
+		end
 	end 
 
 end
